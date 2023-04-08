@@ -1,6 +1,6 @@
 import requests
 
-# set the URL of the receiving website's endpoint that handles the image data
+# set the URL of the receiving website's 
 url = 'https://example.com/receive-image'
 
 # set the path of the image you want to send
@@ -10,6 +10,5 @@ image_path = '/path/to/your/image.jpg'
 with open(image_path, 'rb') as f:
     image_data = f.read()
     response = requests.post(url, data=image_data)
-
-# print the response from the receiving website
+    
 print(response.text)
